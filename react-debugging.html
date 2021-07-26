@@ -6,6 +6,10 @@
 
 <!-- HINT: Check the console in the browser developer tools for errors. The lines numbers may not match up with the line numbers in your text editor. -->
 
+//Uncaught SyntaxError: /Inline Babel script: JSX attributes must only be assigned a non-empty expression. (63:30)
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -79,14 +83,14 @@
           }
           return(
             <>
-              <button onClick={}>   //**************
+              <button onClick={"Click to Draw a Card"}>   //**************
                 Click to Draw a Card
               </button>
-              <button onClick={shuffle}>
+              <button onClick= {"Return Cards and Shuffle Deck"} >
                 Return Cards and Shuffle Deck
               </button>
               <div style={handStyles}>
-                {this.props.hand.map((card, index) => {
+                {this.props.hand.map(0, 1) => {
                   return (
                     <div style={cardStyles} key={index}>
                       {card}
