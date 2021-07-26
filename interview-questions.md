@@ -19,7 +19,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Yarn is a test driven development tool used to test code.
 
-  Researched answer: Yarn is a package manager for code that allows users to share and use code with other users.
+  Researched answer: Yarn is a package manager for code that allows users to share and use code with other users. Bringing all dependencies together. 
 
 
 
@@ -62,6 +62,6 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 3. Object oriented programming: a programming paradigm that relies on the concept of classes and objects.
 
-4. Ruby hash: Hash is a data structure that maintains a set of objects which are termed as the keys and each key associates a value with it. A hash is a collection of unique keys and their values. 
+4. Ruby hash: Hash is a data structure that maintains a set of objects which are termed as the keys and each key associates a value with it. A hash is a collection of unique keys and their values.
 
 5. Ruby blocks A Ruby block is a way of grouping statements, and may appear only in the source adjacent to a method call.
