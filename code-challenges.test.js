@@ -17,12 +17,20 @@
 // a) Create a test with expect statements for each of the variables provided.
 //
 // b) Create the function that makes the test pass.
-//
-//
+
+// Example input: 6
+// Expected output: [1, 1, 2, 3, 5, 8]
+
+// Example input: 10
+// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+
 // Test Driven Development TDD_______________________________________
 // describe("functionReturnArray", () => {
 //   test("returns a string the length of number in fibbonacci sequence", () => {
-//     expect(functionReturnArray()).toEqual([1, 1, 2, 3, 5, 8])
+//     expect(functionReturnArray(6)).toEqual([1, 1, 2, 3, 5, 8])
+//     expect(functionReturnArray(10)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+//
 //   })
 // })
 // TDD_________________________________________________________________
@@ -39,6 +47,17 @@
 // the function must return an array
 // the array must be the length containing the numbers of the fibbanaci sequence.
 //
+// const functionReturnArray = (num) =>{
+//     let fiboArray = [1,1]
+//     let a, b;
+//     for(let i=2;i < num; i++) {
+//         a = fibboArray[i-1];
+//         b = fibboArray[i-2];
+//         fibboArray.push(a + b);
+//     }
+//     return fibboArray
+// }
+
 // let fibonacci = (number) => {
 //   if (number === 1)
 //   {
@@ -87,7 +106,27 @@
 // sorted from least to greatest
 
 // // --------------------2) Create a function that takes in an array and returns a new array of only odd numbers sorted from least to greatest.
-//
+
+// // // a) Create a test with expect statements for each of the variables provided.
+
+// // b) Create the function that makes the test pass.
+
+
+// var fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
+// Expected output: [-9, 7, 9, 199]
+// var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
+// Expected output: [-823, 7, 23]
+
+// TDD_______________________________________
+describe ("onlyOdds", () => {
+  test("returns a newArray of only odds", () => {
+    expect(onlyOdds(fullArr1)).toEqual([-9, 7, 9, 199])
+    expect(onlyOdds(fullArr2)).toEqual([-823, 7, 23])
+
+  })
+})
+// TDD_______________________________________
+
 // onlyOdds = ([]) => {
 //   let oddNums = []
 //   for (let i = 0; i < array.length; i++){
@@ -102,16 +141,6 @@
 // }
 // console.log (onlyOdds([2, 4, 6 , 8 , 10, 11, 13])
 
-// // // a) Create a test with expect statements for each of the variables provided.
-// describe("onlyOdds", () => {
-//   test("returns a newArray of only odds", () => {
-//     expect(onlyOdds()).toEqual(-9, 7, 9, 199)
-//   })
-// })
-
-// First Step //
-// var fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
-//
 // let onlyNums = (arr) => {
 //   return arr.filter(arr => typeof arr === "number")
 // }
@@ -134,13 +163,9 @@
 // }
 // ^^ did not work
 
-// // Expected output: [-9, 7, 9, 199]
-//
-// var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
-// // Expected output: [-823, 7, 23]
+
 //
 //
-// // b) Create the function that makes the test pass.
 //
 
 
@@ -175,20 +200,20 @@
 // function input = array
 // Function output = array of accumulating sum
 
-var numbersToAdd1 = [2, 4, 45, 9]
-// Excpected output: [2, 6, 51, 60]
-
-var numbersToAdd2 = [0, 7, -8, 12]
-// Expected output: [0, 7, -1, 11]
-
-var numbersToAdd3 = []
-// Expected output: []
-
-const cumulativeSum = (sum => value => sum += value)(0);
-
-console.log(numbersToAdd1.map(cumulativeSum));
-console.log(numbersToAdd2.map(cumulativeSum));
-console.log(numbersToAdd3.map(cumulativeSum));
+// var numbersToAdd1 = [2, 4, 45, 9]
+// // Excpected output: [2, 6, 51, 60]
+//
+// var numbersToAdd2 = [0, 7, -8, 12]
+// // Expected output: [0, 7, -1, 11]
+//
+// var numbersToAdd3 = []
+// // Expected output: []
+//
+// const cumulativeSum = (sum => value => sum += value)(0);
+//
+// console.log(numbersToAdd1.map(cumulativeSum));
+// console.log(numbersToAdd2.map(cumulativeSum));
+// console.log(numbersToAdd3.map(cumulativeSum));
 
 
 
