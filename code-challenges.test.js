@@ -122,10 +122,18 @@ describe ("onlyOdds", () => {
   test("returns a newArray of only odds", () => {
     expect(onlyOdds(fullArr1)).toEqual([-9, 7, 9, 199])
     expect(onlyOdds(fullArr2)).toEqual([-823, 7, 23])
-
   })
 })
 // TDD_______________________________________
+
+//pseudo code
+// function = onlyOdds
+// parameter = array
+// returns a new array of only odd numbers sorted from lease to greatest.
+// logic
+// filter out non numeric values
+//
+
 
 // onlyOdds = ([]) => {
 //   let oddNums = []
@@ -196,18 +204,38 @@ describe ("onlyOdds", () => {
 
 // // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
-//Pseudo Code
-// function input = array
-// Function output = array of accumulating sum
-
-// var numbersToAdd1 = [2, 4, 45, 9]
+var numbersToAdd1 = [2, 4, 45, 9]
 // // Excpected output: [2, 6, 51, 60]
 //
-// var numbersToAdd2 = [0, 7, -8, 12]
+var numbersToAdd2 = [0, 7, -8, 12]
 // // Expected output: [0, 7, -1, 11]
 //
 // var numbersToAdd3 = []
 // // Expected output: []
+
+describe("hello", () => {
+  test("returns a string that says hi", () => {
+    expect(numbersToAdd1()).toEqual([2, 6, 51, 60])
+    expect(numbersToAdd2()).toEqual([0, 7, -1, 11])
+    expect(numbersToAdd3()).toEqual([])
+  })
+})
+
+
+// const onlyOdds = (array) =>{
+//     let sortedArr = array.filter(function (item) {
+//     if (typeof item === `number` && item%2)
+//     return item
+//     });
+//     return sortedArr.sort((a, b) => a-b)
+// }
+// console.log(onlyOdds(fullArr1))
+
+//Pseudo Code
+// function input = array
+// Function output = array of accumulating sum
+
+
 //
 // const cumulativeSum = (sum => value => sum += value)(0);
 //
