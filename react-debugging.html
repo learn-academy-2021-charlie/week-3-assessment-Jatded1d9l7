@@ -59,6 +59,7 @@
               <Card
                 drawCard={this.drawCard}
                 shuffle={this.shuffle}
+                hand= {this.state.hand}
               />
             </>
           )
@@ -83,14 +84,14 @@
           }
           return(
             <>
-              <button onClick={"Click to Draw a Card"}>   //**************
+              <button onClick={this.props.drawCard}>   //**************
                 Click to Draw a Card
               </button>
-              <button onClick= {"Return Cards and Shuffle Deck"} >
+              <button onClick= {this.props.shuffle} >
                 Return Cards and Shuffle Deck
               </button>
               <div style={handStyles}>
-                {this.props.hand.map(0, 1) => {
+                {this.props.hand.map(card, index) => {
                   return (
                     <div style={cardStyles} key={index}>
                       {card}
