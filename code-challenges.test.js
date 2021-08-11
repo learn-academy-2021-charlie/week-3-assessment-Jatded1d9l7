@@ -4,6 +4,15 @@
      // a) Create a test with expect statements for each of the variables provided.
      // b) Create the function that makes the test pass.
 
+//pseudo code
+// Function that takes in a number (greater than 2)
+// Returns an array of that length containing numbers of the Fibonacci sequence.  
+// Formula for the Fibonacci squence
+// For loop to iterate through numbers
+// create newArray to house Fibonacci numbers 
+// .push adds items to the end of an array
+
+
 //-------------------- CODE BLOCK START ----------------------// Week-3-assessment-Jatded1d9l7 -Code Challenges- -Question 1-
 
 describe("fibonacci", () => {
@@ -44,6 +53,13 @@ const fibonacci = (number) => {
      // a) Create a test with expect statements for each of the variables provided.
      // b) Create the function that makes the test pass.
 
+//pseudo code
+// Function takes in an array
+// returns a new array of only odd numbers sorted from least to greatest. 
+// .filter() method that creates a new array with all elements that pass the test implemented by the function. 
+// typeOf operator that returns a string indicating the type of unevaluated operand
+// .sort() to sort numerically
+
 
 //-------------------- CODE BLOCK START ----------------------// Week-3-assessment-Jatded1d9l7 -Code Challenges- -Question 2-
 
@@ -73,9 +89,19 @@ const fibonacci = (number) => {
 
 
 
+
 // // // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
      // a) Create a test with expect statements for each of the variables provided.
      // b) Create the function that makes the test pass.
+
+
+//pseudo code
+// function that takes in an array of the accumulating sum
+// an empty array should return an empty array
+// .map to iterate through the arrau of accumulating sums
+
+
+//-------------------- CODE BLOCK START ----------------------// Week-3-assessment-Jatded1d9l7 -Code Challenges- -Question 3-
 
      describe("addNum", () => {
       test("returns an array of the accumulating sum", () => {
@@ -99,3 +125,5 @@ const fibonacci = (number) => {
         return anchor += value
       })
     }
+
+    //-------------------- CODE BLOCK END ----------------------// Week-3-assessment-Jatded1d9l7 -Code Challenges- -Question 3-
